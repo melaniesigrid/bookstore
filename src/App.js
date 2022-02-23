@@ -16,7 +16,7 @@ function App() {
         <Route path="/categories/" element={<Categories />} />
       </Routes>
     </div>
-  )
-};
+  );
+}
 
 export default App;
