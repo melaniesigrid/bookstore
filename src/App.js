@@ -4,7 +4,7 @@ import {
   Route,
 } from 'react-router-dom';
 import Header from './components/header';
-import Books from './redux/books/books';
+import BookPage from './components/bookPage';
 import Categories from './redux/categories/categories';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <div className="app">
       <Header />
       <Routes>
-        <Route path="/" element={<Books />} />
+        <Route path="/" element={<BookPage />} />
         <Route path="/categories/" element={<Categories />} />
       </Routes>
     </div>
