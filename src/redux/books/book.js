@@ -7,7 +7,7 @@ const Book = () => {
         <p className="genre">Action</p>
         <p className="bookTitle">The Hunger Games</p>
         <p className="bookAuthor">Suzanne Collins</p>
-        <div></div>
+        <button type="button" className="remove">Remove</button>
       </div>
       <div className="graphContainer">
         <div className="graph"></div>
