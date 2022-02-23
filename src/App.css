@@ -1,0 +1,52 @@
+.app {
+  height: 100vh;
+}
+
+.categories {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.Title {
+  margin: 2rem;
+}
+
+.Header {
+  display: flex;
+  flex-direction: row;
+}
+
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.NavBar ul {
+  list-style-type: none;
+  display: flex;
+  margin: 2rem;
+}
+
+.NavBar li {
+  padding: 10px;
+}
+
+.bookContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 3rem;
+  align-items: center;
+}
+
+.addForm {
+  margin: 3rem;
+  flex-direction: column;
+}
+
+.btn {
+  width: 4rem;
+}
