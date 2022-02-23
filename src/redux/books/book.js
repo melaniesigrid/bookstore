@@ -10,7 +10,7 @@ function Book() {
         <button type="button" className="remove">Remove</button>
       </div>
       <div className="graphContainer">
-        <div className="graph"></div>
+        <div className="graph" />
         <div className="percentageContainer">
           <p clasName="percentage">64%</p>
           <p className="completed">Completed</p>
@@ -22,7 +22,7 @@ function Book() {
         <button type="button" className="progressBtn">Update Progress</button>
       </div>
     </div>
-  )
+  );
 }
 
 export default Book;

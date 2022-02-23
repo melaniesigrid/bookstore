@@ -6,6 +6,6 @@ function Categories() {
       <p>Under construction...</p>
     </div>
   );
-};
+}
 
 export default Categories;

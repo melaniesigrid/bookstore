@@ -16,6 +16,6 @@ function Books() {
       </form>
     </div>
   );
-};
+}
 
 export default Books;
