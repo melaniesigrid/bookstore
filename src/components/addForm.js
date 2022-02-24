@@ -7,6 +7,7 @@ function AddForm() {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
 
   const getTitle = (e) => {
     setTitle(e.target.value);
@@ -16,11 +17,16 @@ function AddForm() {
     setAuthor(e.target.value);
   };
 
+  const getCategory = (e) => {
+    setCategory(e.target.value);
+  }
+
   const submitBookToStore = (title, author) => {
     const newBook = {
       id: uuidv4(),
       title,
       author,
+      category,
     };
 
     // dispatch an action and pass it the newBook object (your action's payload)
@@ -38,8 +44,8 @@ function AddForm() {
         <input id="author" placeholder="Author" onChange={getAuthor} value={author} required />
       </label>
       <label htmlFor="genre">
-        <select className="bookSelect" id="genre">
-          <option value="">Genre</option>
+        <select className="bookSelect" id="genre" onChange={getCategory} value={category} required>
+          <option value="Unknown">Genre</option>
           <option value="Action">Action</option>
           <option value="Science-Fiction">Science-Fiction</option>
           <option value="Economy">Economy</option>

@@ -8,7 +8,7 @@ function BookPage() {
   console.log(myBooks);
   return (
     <div>
-      {myBooks.map((book) => <Book id={book.id} key={book.id} title={book.title} author={book.author} />)}
+      {myBooks.map((book) => <Book id={book.id} key={book.id} title={book.title} author={book.author} category={book.category} />)}
       <AddForm />
     </div>
   );

@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import removeBook from '../redux/books/books';
 
 function Book(props) {
-  const { id, title, author } = props;
+  const { id, title, author, category } = props;
   console.log(id);
   const dispatch = useDispatch();
   const remove = () => dispatch(removeBook(id));
@@ -12,7 +12,7 @@ function Book(props) {
   return (
     <div className="bookContainer">
       <div className="titleContainer">
-        <p className="genre">Action</p>
+        <p className="genre" value={category}>{category}</p>
         <p className="bookTitle">{title}</p>
         <p className="bookAuthor">{author}</p>
         <button type="button" className="remove" onClick={remove}>Remove</button>
@@ -37,6 +37,7 @@ Book.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
 };
 
 export default Book;
