@@ -1,6 +1,8 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 function Book() {
+  const getStore = useSelector((store) => store.booksReducer);
   return (
     <div className="bookContainer">
       <div className="titleContainer">
@@ -12,7 +14,7 @@ function Book() {
       <div className="graphContainer">
         <div className="graph" />
         <div className="percentageContainer">
-          <p clasName="percentage">64%</p>
+          <p className="percentage">64%</p>
           <p className="completed">Completed</p>
         </div>
       </div>
