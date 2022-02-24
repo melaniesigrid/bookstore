@@ -9,7 +9,7 @@ export const addBook = (payload) => ({
 })
 export const removeBook = (id) => ({
   type: REMOVE_BOOK,
-  id
+  id,
 })
 
 const reducer =  (state = initialState, action) => {
