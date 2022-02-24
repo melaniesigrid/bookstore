@@ -8,9 +8,8 @@ function Book(props) {
     id,
     title,
     author,
-    category
+    category,
   } = props;
-  console.log(id);
   const dispatch = useDispatch();
   const remove = () => dispatch(removeBook(id));
 
