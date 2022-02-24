@@ -5,8 +5,8 @@ import {
 } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './redux/configureStore';
-import Header from './components/Header';
-import BookPage from './components/BookPage';
+import Header from './components/Header.js';
+import BookPage from './components/BookPage.js';
 import Categories from './redux/categories/categories';
 
 function App() {

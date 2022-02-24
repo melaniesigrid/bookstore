@@ -19,7 +19,7 @@ function AddForm() {
 
   const getCategory = (e) => {
     setCategory(e.target.value);
-  }
+  };
 
   const submitBookToStore = (title, author) => {
     const newBook = {
