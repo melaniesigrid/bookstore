@@ -12,7 +12,7 @@ function BookPage() {
     <div>
       {
         myBooks.map(
-          (book) => (<Book
+          (book) => (<Book // eslint-disable-line
             key={book.id}
             id={book.id}
             title={book.title}
