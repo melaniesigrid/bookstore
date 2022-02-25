@@ -8,12 +8,14 @@ function BookPage() {
   return (
     <div>
       {myBooks.map((book) => {
+        return (
         <Book
           id={book.id}
           key={book.id}
           title={book.title}
           author={book.author}
           category={book.category} />
+        )
       })}
       <AddForm />
     </div>
