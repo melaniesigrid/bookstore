@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 import React from 'react';
 import {
   Routes,
@@ -6,9 +5,7 @@ import {
 } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './redux/configureStore';
-/* eslint-disable-next-line */
 import Header from './components/Header';
-/* eslint-disable-next-line */
 import BookPage from './components/BookPage';
 import Categories from './redux/categories/categories';
 

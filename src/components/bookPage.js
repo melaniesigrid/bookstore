@@ -1,9 +1,6 @@
-/* eslint-disable react/jsx-key */
 import React from 'react';
 import { useSelector } from 'react-redux';
-/* eslint-disable-next-line */
 import Book from './Book';
-/* eslint-disable-next-line */
 import AddForm from './AddForm';
 
 function BookPage() {
@@ -12,7 +9,7 @@ function BookPage() {
     <div>
       {
         myBooks.map(
-          (book) => (<Book // eslint-disable-line
+          (book) => (<Book
             key={book.id}
             id={book.id}
             title={book.title}
