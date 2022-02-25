@@ -8,7 +8,9 @@ function BookPage() {
   return (
     <div>
       {
-        myBooks.map((book) => <Book key={book.id} title={book.title} author={book.author} category={book.category} />)
+        myBooks.map((book) => (
+          <Book key={book.id} id={book.id} title={book.title} author={book.author} category={book.category} />)
+        )
       }
       <AddForm />
     </div>
