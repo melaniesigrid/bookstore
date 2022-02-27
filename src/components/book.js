@@ -4,14 +4,13 @@ import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBookApi } from '../redux/books/books';
 
-/* eslint-disable no-unused-vars */
-function Book(props) {
-  const {
+function Book({
     item_id,
     title,
     author,
     category,
-  } = props;
+  }) {
+
   const dispatch = useDispatch();
   const remove = () => {
     dispatch(removeBookApi(item_id));
