@@ -1,7 +1,7 @@
-import { React, useState } from 'react';
+import  React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/books';
+import { sendBooksApi } from '../redux/books/books';
 
 function AddForm() {
   const dispatch = useDispatch();
@@ -21,18 +21,19 @@ function AddForm() {
     setCategory(e.target.value);
   };
 
-  const submitBookToStore = (title, author) => {
-    const newBook = {
-      id: uuidv4(),
-      title,
-      author,
-      category,
-    };
+  const submitBookToStore = () => {
+    if (title && author && category) {
+      const newBook = {
+        item_id: uuidv4(),
+        title,
+        author,
+        category,
+      };
 
-    // dispatch an action and pass it the newBook object (your action's payload)
-    dispatch(addBook(newBook));
-    setTitle('');
-    setAuthor('');
+      dispatch(sendBooksApi(newBook));
+      setTitle('');
+      setAuthor('');
+    }
   };
 
   return (
@@ -52,7 +53,7 @@ function AddForm() {
           <option value="Romance">Romance</option>
         </select>
       </label>
-      <button type="submit" className="add btn" onClick={() => submitBookToStore(title, author)}>Add</button>
+      <button type="submit" className="add btn" onClick={() => submitBookToStore()}>Add</button>
     </form>
   );
 }
