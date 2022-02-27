@@ -8,6 +8,7 @@ function Book(props) {
   const {
     item_id,
     title,
+    author,
     category,
   } = props;
   const dispatch = useDispatch();
