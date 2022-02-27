@@ -89,11 +89,11 @@
 .addForm {
   margin: 3rem;
   flex-direction: column;
-  margin: 3rem;
 }
 
 .graphContainer {
   display: flex;
+  align-items: center;
 }
 
 .percentageContainer {
@@ -103,7 +103,11 @@
   border: 5px solid #3487e7;
   border-right: 5px solid #ddd;
   transform: rotate(225deg);
-  margin: 0 30px;
+  margin: 0 2rem;
+}
+
+.percentage {
+  font-size: 2rem;
 }
 
 .addNew {
