@@ -1,5 +1,6 @@
 /* eslint-disable camelcase */
 import React from 'react';
+import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBookApi } from '../redux/books/books';
 
@@ -39,7 +40,7 @@ function Book(props) {
 }
 
 Book.propTypes = {
-  id: PropTypes.string.isRequired,
+  item_id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
