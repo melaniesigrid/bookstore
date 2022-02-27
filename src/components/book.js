@@ -5,12 +5,11 @@ import { useDispatch } from 'react-redux';
 import { removeBookApi } from '../redux/books/books';
 
 function Book({
-    item_id,
-    title,
-    author,
-    category,
-  }) {
-
+  item_id,
+  title,
+  author,
+  category,
+}) {
   const dispatch = useDispatch();
   const remove = () => {
     dispatch(removeBookApi(item_id));
@@ -20,7 +19,7 @@ function Book({
       <div className="titleContainer">
         <p className="genre" value={category}>{category}</p>
         <p className="bookTitle">{title}</p>
-        <p className="bookAuthor">Jane Doe</p>
+        <p className="bookAuthor">{ `Jane Doe ${author}` }</p>
         <button type="button" className="remove" onClick={remove}>Remove</button>
       </div>
       <div className="graphContainer">
