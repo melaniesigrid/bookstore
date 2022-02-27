@@ -4,7 +4,7 @@
 
 > A simple website to store all your favorite books. Created with React.js
 
-
+![screenshot](./bookstore_screenshot.png)
 ## Built With
 
 - React

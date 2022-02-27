@@ -4,6 +4,7 @@ import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBookApi } from '../redux/books/books';
 
+/* eslint-disable no-unused-vars */
 function Book(props) {
   const {
     item_id,
@@ -39,6 +40,8 @@ function Book(props) {
     </div>
   );
 }
+
+/* eslint-disable react/prop-types */
 
 Book.propTypes = {
   item_id: PropTypes.string.isRequired,
