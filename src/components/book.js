@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { removeBookApi } from '../redux/books/books';
@@ -11,8 +12,7 @@ function Book(props) {
   } = props;
   const dispatch = useDispatch();
   const remove = () => {
-    console.log(item_id);
-    dispatch(removeBookApi(item_id))
+    dispatch(removeBookApi(item_id));
   };
   return (
     <div className="bookContainer">
@@ -37,5 +37,12 @@ function Book(props) {
     </div>
   );
 }
+
+Book.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+};
 
 export default Book;
