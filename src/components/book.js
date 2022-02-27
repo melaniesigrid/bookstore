@@ -41,8 +41,6 @@ function Book(props) {
   );
 }
 
-/* eslint-disable react/prop-types */
-
 Book.propTypes = {
   item_id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,

@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@200;300;700&display=swap');
 
 .app {
-  height: 100vh;
+  height: 90vh;
+  width: 90vw;
+  background-color: rgba(0, 0, 0, 0.02);
+  border: 1px solid #d8d8d8;
+  border-radius: 1rem;
 }
 
 .categories {
@@ -13,6 +17,7 @@
 }
 
 .Header {
+  top: 5rem;
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #d8d8d8;
@@ -22,6 +27,15 @@
   margin: 2rem;
   font-size: 1.8rem;
   color: #0290ff;
+}
+
+.profile {
+  width: 30px;
+  height: 30px;
+  margin: 2rem;
+  border: 1px solid lightgray;
+  border-radius: 60%;
+  padding: 0.6rem;
 }
 
 .NavBar {

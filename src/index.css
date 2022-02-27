@@ -3,7 +3,11 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: rgba(0, 0, 0, 0.02);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100vh;
 }
 
 a,

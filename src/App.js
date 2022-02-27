@@ -8,6 +8,7 @@ import store from './redux/configureStore';
 import Header from './components/header';
 import BookPage from './components/bookPage';
 import Categories from './redux/categories/categories';
+import './App.css';
 
 function App() {
   return (
