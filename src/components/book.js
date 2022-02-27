@@ -4,13 +4,12 @@ import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBookApi } from '../redux/books/books';
 
-function Book(props) {
-  const {
-    item_id,
-    title,
-    author,
-    category,
-  } = props;
+function Book({
+  item_id,
+  title,
+  author,
+  category,
+}) {
   const dispatch = useDispatch();
   const remove = () => {
     dispatch(removeBookApi(item_id));
@@ -20,20 +19,21 @@ function Book(props) {
       <div className="titleContainer">
         <p className="genre" value={category}>{category}</p>
         <p className="bookTitle">{title}</p>
-        <p className="bookAuthor">{author}</p>
+        <p className="bookAuthor">{ `Jane Doe ${author}` }</p>
         <button type="button" className="remove" onClick={remove}>Remove</button>
       </div>
       <div className="graphContainer">
-        <div className="graph" />
-        <div className="percentageContainer">
+        <div className="percentageContainer" />
+        <div className="graphParagraph">
           <p className="percentage">64%</p>
           <p className="completed">Completed</p>
         </div>
       </div>
       <div className="progressContainer">
+        <div className="progressContainer" />
         <p>Current Chapter</p>
         <p>Chapter 17</p>
-        <button type="button" className="progressBtn">Update Progress</button>
+        <button type="button" className="progressBtn btn">Update Progress</button>
       </div>
     </div>
   );
