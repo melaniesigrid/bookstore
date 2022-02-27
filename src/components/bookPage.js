@@ -12,7 +12,7 @@ function BookPage() {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className="allContainer">
       {
         myBooks.map((book) => (
           <Book
