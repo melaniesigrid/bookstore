@@ -58,7 +58,7 @@ function AddForm() {
         <button type="submit" className="add btn" onClick={() => submitBookToStore()}>Add</button>
       </form>
     </>
-  )
+  );
 }
 
 export default AddForm;

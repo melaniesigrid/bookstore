@@ -58,7 +58,7 @@
 .genre {
   font-weight: bold;
   font-size: 1rem;
-  color: #999999;
+  color: #999;
 }
 
 .bookTitle {
@@ -89,6 +89,7 @@
 .addForm {
   margin: 3rem;
   flex-direction: column;
+  margin: 3rem;
 }
 
 .graphContainer {
@@ -99,7 +100,7 @@
   width: 70px;
   height: 70px;
   border-radius: 3rem;
-  border: 5px solid #3487E7;
+  border: 5px solid #3487e7;
   border-right: 5px solid #ddd;
   transform: rotate(225deg);
   margin: 0 30px;
@@ -107,12 +108,8 @@
 
 .addNew {
   margin: 3rem;
-  color: #888888;
+  color: #888;
   text-transform: uppercase;
-}
-
-.addForm {
-  margin: 3rem;
 }
 
 form input {
@@ -140,7 +137,7 @@ select {
 }
 
 .add {
-  background-color: #3487E7;
+  background-color: #3487e7;
   color: white;
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
@@ -160,7 +157,7 @@ select {
 }
 
 .progressBtn {
-  background-color: #3487E7;
+  background-color: #3487e7;
   color: white;
   font-family: 'Roboto Slab', serif;
   height: 2.2rem;

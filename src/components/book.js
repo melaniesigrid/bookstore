@@ -30,7 +30,7 @@ function Book(props) {
         </div>
       </div>
       <div className="progressContainer">
-        <div className="progressContainer"></div>
+        <div className="progressContainer" />
         <p>Current Chapter</p>
         <p>Chapter 17</p>
         <button type="button" className="progressBtn btn">Update Progress</button>
