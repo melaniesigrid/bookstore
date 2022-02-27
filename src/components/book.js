@@ -10,8 +10,10 @@ function Book(props) {
     category,
   } = props;
   const dispatch = useDispatch();
-  const remove = () => dispatch(removeBookApi(item_id));
-
+  const remove = () => {
+    console.log(item_id);
+    dispatch(removeBookApi(item_id))
+  };
   return (
     <div className="bookContainer">
       <div className="titleContainer">
